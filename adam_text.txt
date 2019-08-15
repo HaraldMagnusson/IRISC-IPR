@@ -1,0 +1,14 @@
+The main objectives of the control system are: selection, acquisition and tracking of astronomical targets; stabilisation of the telescope, and sun pointing avoidance.
+
+To achieve that, we first check our position and rotation with the use of GPS and Star Tracker, then we track the acquired target and from this we have angles that the stabilisation system has to keep for the exposure. For the stabilisation we use the gyroscopes to monitor the gondola rotation and the encoders for the position of the telescope. We also use the Kalman filter to improve the certainty of the measurements.
+
+This is our main control loop. As you can see, the left part is responsible for tracking and the right for the stabilisation. We use the feedback loop only for the stabilisation.
+
+We face a few risks in our current design:
+The gyroscopes that we chose could have too high drift error for the required exposure time. The possible solutions could be using a better sensor or adding another one.
+
+We are also aware of the hardships in choosing proper parameters for the PID controller and Kalman filter and we will be taking analytical approach and we will conduct various tests both on the model and prototype to be sure of it. We will be also consulting everything with our mentor, who is a specialist in control field.
+
+For the cameras and telescope there weren't any changes in the design, but we had them delivered and conducted a few tests to check that they are working as expected.
+
+As for the team structure, since PDR the only change was Jon joining us for the mechanical team. We are on time with the projected project schedule - we are in the first iteration of the most project components and as it can be seen we are on budget.
