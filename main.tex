@@ -8,6 +8,7 @@
 \usepackage{subfig}
 \usepackage{pgfgantt}
 \usepackage[export]{adjustbox}
+\usepackage{float}
 
 % \usepackage[table]{xcolor}
 
@@ -152,7 +153,88 @@
 %   SOFTWARE. ---------------------------------------------------------------------------
 \subsection{Software}
 
+\begin{frame}[c]{Software - Current Status}
+    \begin{itemize}
+        \item Cameras
+        \item Sensors
+        \item E-Link Communications
+        \item Data Handling
+        \item Timeline of Events
+        \item Control System
+    \end{itemize}
+\end{frame}
 
+\begin{frame}[c]{Software - Cameras}
+    \begin{columns}[t]
+        \begin{column}{.4\textwidth}
+            \begin{itemize}
+                \item Finished
+                \item Tested
+                \item Upgrade to USB 3 needed
+            \end{itemize}
+        \end{column}
+        
+        \begin{column}{.6\textwidth}
+            \begin{figure}[H]
+                \includegraphics[width=\textwidth]{software/usb_comp.png}
+                \caption{Comparison between USB 2 and 3 for the NIR camera}
+            \end{figure}
+        \end{column}
+    \end{columns}
+\end{frame}
+
+\begin{frame}[c]{Software - Sensors}
+    \begin{itemize}
+        \item GPS: finished \& tested
+        \item Encoders: finished
+        \item IMU: implementation phase
+        \item Star Tracker: implementation phase
+    \end{itemize}
+\end{frame}
+
+\begin{frame}[c]{Software - E-Link Communications}
+    \begin{itemize}
+        \item Localhost
+        \item Downlink: close to finished
+        \item Uplink: implementation phase
+        \item Commands: not yet started
+    \end{itemize}
+\end{frame}
+
+\begin{frame}[c]{Software - Data Handling}
+    \begin{itemize}
+        \item Compression: finished
+        \item Queuing: not yet started
+        \item Sensor data logging: not yet started
+    \end{itemize}
+\end{frame}
+
+\begin{frame}[c]{Software - Timeline of Events}
+    \begin{itemize}
+        \item Initialisation sequence: implementation phase
+        \item Ascent phase: not yet started
+        \item Start of float phase: not yet started
+        \item Shutdown: not yet started
+    \end{itemize}
+\end{frame}
+
+\begin{frame}[c]{Software - Current Issues}
+    \begin{columns}[t]
+        \begin{column}{.4\textwidth}
+            \begin{itemize}
+                \item Lack of library support for multiple buses on the Raspberry Pi 4B
+                \item Encoders pull the data line high
+            \end{itemize}
+        \end{column}
+        
+        \begin{column}{.6\textwidth}
+            \begin{figure}[H]
+                \includegraphics[width=\textwidth]{software/encoder_gps_bus.png}
+                \caption{Encoders interfering with data sent from GPS receiver}
+            \end{figure}
+        \end{column}
+    \end{columns}
+\end{frame}
 
 \subsection{Telescope and Cameras}
 
