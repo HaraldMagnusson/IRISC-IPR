@@ -77,7 +77,7 @@
 %----------------------------------------------------------------------------------------
 %   INTRODUCTION / EXPERIMENT OVERVIEW.
 %----------------------------------------------------------------------------------------
-\section{Experiment Overview}
+%\section{Experiment Overview}
 
 
 
@@ -255,6 +255,30 @@
             \end{figure}
         \end{column}
     \end{columns}
+\end{frame}
+
+
+% CONTROL within SW
+\begin{frame}[c]{Control System - Current Status}
+    \begin{itemize}
+        \item Selection - algorithm finished, testing
+        \item Tracking - algorithm finished, testing
+        \item PID control - algorithm \& C-implementation almost finished, currently testing \& tuning
+        \item Motor control - controller available, integration with encoders required
+        \item Kalman filter - not yet started
+    \end{itemize}
+\end{frame}
+
+
+\begin{frame}[c]{Control System - upcoming steps}
+    \begin{itemize}
+        \item Selection - finish testing, start C-implementation
+        \item Tracking - finish testing, start C-implementation
+        \item PID control - design gondola model (already in progress) to tune control parameters
+        \item Motor control - implement encoder input in motor control
+        \item Kalman filter - design asynchronous Kalman filter (algorithm \& C)
+        \item open loop \& closed loop testing on OBSW for different scenarios
+    \end{itemize}
 \end{frame}
 
 \subsection{Telescope and Cameras}
