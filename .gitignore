@@ -138,7 +138,7 @@ sympy-plots-for-*.tex/
 main.pdf
 main.synctex*
 
-*.pdf
+# *.pdf
 
 !figures/images/Team_structure.pdf
 !figures/images/Gantt_1CDR.pdf
